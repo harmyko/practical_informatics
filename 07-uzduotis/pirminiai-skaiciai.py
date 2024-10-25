@@ -3,6 +3,12 @@
 
 import sys
 
+def arPirminis(skaicius):
+    return True
+
+def ieskotiPirminiu(pradzia, pabaiga):
+    pass
+
 def paversti_i_skaiciu(ivestis):
     skaicius = None
     try:
@@ -32,7 +38,7 @@ if skaicius_nuo > skaicius_iki:
     skaicius_nuo = skaicius_iki
     skaicius_iki = tmp
 print("Pirminių skaičių ieškoma intervale [" + str(skaicius_nuo) + ", " +str(skaicius_iki) + "]")
-
+ieskotiPirminiu(skaicius_nuo, skaicius_iki)
 
 
 
