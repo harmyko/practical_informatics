@@ -9,6 +9,11 @@ def korektiskasIntervaloDydis(pradzia, pabaiga):
         return False
     return True
 
+def korektiskasVirsutinisRezis(pabaiga):
+    if pabaiga > 1000000:
+        return False
+    return True
+
 def arPirminis(skaicius):
     dalinasi = 0
     for i in range(1, skaicius + 1):
@@ -59,6 +64,12 @@ print("Pirminių skaičių ieškoma intervale [" + str(skaicius_nuo) + ", " +str
 if korektiskasIntervaloDydis(skaicius_nuo, skaicius_iki) == False:
     print("Maksimalus leistinas skirtumas tarp rėžių galų yra 99. ")
     sys.exit(0)
+    
+if korektiskasVirsutinisRezis(skaicius_iki) == False:
+    print("Viršutinis rėžis negali viršyti 1000000.")
+    sys.exit(0)
+    
+
 
 ieskotiPirminiu(skaicius_nuo, skaicius_iki)
 
