@@ -24,9 +24,11 @@ def arPirminis(skaicius):
     return True
 
 def ieskotiPirminiu(pradzia, pabaiga):
+    count = 0
     for i in range(pradzia, pabaiga + 1):
         if arPirminis(i) == True:
-            print(i)
+            count += 1
+            print("%2d" % count + ". " + "%7d" % i)
     pass
 
 def paversti_i_skaiciu(ivestis):
@@ -59,7 +61,7 @@ if skaicius_nuo > skaicius_iki:
     skaicius_nuo = skaicius_iki
     skaicius_iki = tmp
 
-print("Pirminių skaičių ieškoma intervale [" + str(skaicius_nuo) + ", " +str(skaicius_iki) + "]")
+print("Pirminių skaičių ieškoma intervale [" + str(skaicius_nuo) + ", " + str(skaicius_iki) + "]")
 
 if korektiskasIntervaloDydis(skaicius_nuo, skaicius_iki) == False:
     print("Maksimalus leistinas skirtumas tarp rėžių galų yra 99. ")
