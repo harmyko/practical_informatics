@@ -7,6 +7,8 @@ def arPirminis(skaicius):
     return True
 
 def ieskotiPirminiu(pradzia, pabaiga):
+    for i in range(pradzia, pabaiga + 1):
+        print(i)
     pass
 
 def paversti_i_skaiciu(ivestis):
