@@ -3,6 +3,12 @@
 
 import sys
 
+def korektiskasIntervaloDydis(pradzia, pabaiga):
+    intervaloDydis = pabaiga - pradzia + 1
+    if intervaloDydis > 100:
+        return False
+    return True
+
 def arPirminis(skaicius):
     dalinasi = 0
     for i in range(1, skaicius + 1):
@@ -42,12 +48,18 @@ skaicius_nuo = input("Įveskite intervalo pradžią: ")
 skaicius_nuo = patikrinti_skaiciu(skaicius_nuo)
 skaicius_iki = input("Įveskite intervalo pabaigą: ")
 skaicius_iki = patikrinti_skaiciu(skaicius_iki)
+
 if skaicius_nuo > skaicius_iki:
     tmp = skaicius_nuo
     skaicius_nuo = skaicius_iki
     skaicius_iki = tmp
-print("Pirminių skaičių ieškoma intervale [" + str(skaicius_nuo) + ", " +str(skaicius_iki) + "]")
-ieskotiPirminiu(skaicius_nuo, skaicius_iki)
 
+print("Pirminių skaičių ieškoma intervale [" + str(skaicius_nuo) + ", " +str(skaicius_iki) + "]")
+
+if korektiskasIntervaloDydis(skaicius_nuo, skaicius_iki) == False:
+    print("Maksimalus leistinas skirtumas tarp rėžių galų yra 99. ")
+    sys.exit(0)
+
+ieskotiPirminiu(skaicius_nuo, skaicius_iki)
 
 
