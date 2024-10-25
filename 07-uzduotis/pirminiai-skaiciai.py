@@ -8,7 +8,8 @@ def arPirminis(skaicius):
 
 def ieskotiPirminiu(pradzia, pabaiga):
     for i in range(pradzia, pabaiga + 1):
-        print(i)
+        if arPirminis(i) == True:
+            print(i)
     pass
 
 def paversti_i_skaiciu(ivestis):
