@@ -49,5 +49,5 @@ zodziuSkaicius = len(zodziaiFiltruoti)
 print("Apskaičiuotas žodžių skaičius: " + str(zodziuSkaicius))
 
 dazniai = raskZodziuDazni(zodziaiFiltruoti)
-print(dazniai)
+print("Dažniausiai naudojami žodžiai: " + dazniai)
     
