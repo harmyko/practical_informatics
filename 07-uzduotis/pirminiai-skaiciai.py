@@ -29,6 +29,8 @@ def ieskotiPirminiu(pradzia, pabaiga):
         if arPirminis(i) == True:
             count += 1
             print("%2d" % count + ". " + "%7d" % i)
+    if count == 0:
+        print("Nurodytame intervale nėra nei vieno pirminio skaičiaus.")
     pass
 
 def paversti_i_skaiciu(ivestis):
