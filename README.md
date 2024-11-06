@@ -30,3 +30,19 @@ Asmeniniame kompiuteryje su įdiegtu Python interpretatoriumi:
 $ cd 07-uzduotis
 $ python pirminiai-skaiciai.py
 ```
+
+## 07B užduotis (papildoma)
+
+Sukurta programa, kuri suprastina vartotojo įvestą šaknies išraišką.
+
+### Programos funkcionalumas
+
+- [X] Vartotojo įvesties surinkimas
+- [X] Vartotojo įvesties patikrinimas
+- [X] Šaknies išraiškos prastinimas
+- [ ] Efektyvus šaknies prastinimo algoritmas
+
+### Programos įvesties skaičių rėžiai
+
+Programa buvo parašyta priskiriant minimalius bei maksimalius įvesties skaičių rėžius atitinkamai *-10000* ir *10000*, siekiant apsaugoti programą nuo nenuspėjamų veiksmų ar per ilgo skaičiavimo laiko. Šiuos rėžius galima koreguoti kodo viršuje pakeičiant **SKAICIUS_MIN** bei **SKAICIUS_MAX** reikšmes.
+
