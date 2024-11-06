@@ -20,4 +20,11 @@ for eilute in f:
     eilute = eilute.strip().split(" ")
     zodziai += eilute
     
-    print(zodziai)
+zodziaiFiltruoti = []
+for zodis in zodziai:
+    zodis = zodis.lower()
+    if len(zodis) > 0 and zodis.isalpha():
+        zodziaiFiltruoti.append(zodis)
+        
+print(zodziaiFiltruoti)
+    
