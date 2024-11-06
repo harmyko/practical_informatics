@@ -14,6 +14,14 @@ def pasalinkSkyrybosZenklus(eilute):
         eilute = eilute.replace(simbolis, " ")
     return eilute
 
+def raskIlgiausiaZodi(zodziaiFiltruoti):
+    maxIlgis = 0
+    for zodis in zodziaiFiltruoti:
+        if len(zodis) >= maxIlgis:
+            maxIlgis = len(zodis)
+            ilgiausiasZodis = zodis
+    return ilgiausiasZodis
+
 zodziai = []
 for eilute in f:
     eilute = pasalinkSkyrybosZenklus(eilute)
@@ -26,5 +34,6 @@ for zodis in zodziai:
     if len(zodis) > 0 and zodis.isalpha():
         zodziaiFiltruoti.append(zodis)
         
-print(zodziaiFiltruoti)
+ilgiausiasZodis = raskIlgiausiaZodi(zodziaiFiltruoti)
+print(ilgiausiasZodis)
     
