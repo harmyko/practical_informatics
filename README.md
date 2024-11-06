@@ -46,3 +46,14 @@ Sukurta programa, kuri suprastina vartotojo įvestą šaknies išraišką.
 
 Programa buvo parašyta priskiriant minimalius bei maksimalius įvesties skaičių rėžius atitinkamai *-10000* ir *10000*, siekiant apsaugoti programą nuo nenuspėjamų veiksmų ar per ilgo skaičiavimo laiko. Šiuos rėžius galima koreguoti kodo viršuje pakeičiant **SKAICIUS_MIN** bei **SKAICIUS_MAX** reikšmes.
 
+## 08 užduotis
+
+Sukurta programa, kuri išanalizuoja Donelaičio "Metai" kūrinio sandarą.
+
+### Programos funkcionalumas
+
+- [X] Atrandamas ilgiausias žodis
+- [X] Randamas žodžių skaičius
+- [X] Apskaičiuojamas kiekvieno žodžio pasikartojimo dažnis
+- [X] Žodžiai surikiuojami pagal dažnį
+
