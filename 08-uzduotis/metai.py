@@ -6,6 +6,8 @@ Created on Wed Nov  6 19:39:36 2024
 @author: ugte0917
 """
 
+from collections import Counter
+
 f = open("Metai.txt", "r", encoding="utf8")
 
 def pasalinkSkyrybosZenklus(eilute):
@@ -22,6 +24,12 @@ def raskIlgiausiaZodi(zodziaiFiltruoti):
             ilgiausiasZodis = zodis
     return ilgiausiasZodis
 
+def raskZodziuDazni(zodziaiFiltruoti):
+    zodziuDazniai = Counter(zodziaiFiltruoti)
+    surikiuotiPagalDazni = zodziuDazniai.most_common()
+    isvestis = ', '.join([f"'{zodis}': {daznis}" for zodis, daznis in surikiuotiPagalDazni])
+    return isvestis
+
 zodziai = []
 for eilute in f:
     eilute = pasalinkSkyrybosZenklus(eilute)
@@ -35,5 +43,11 @@ for zodis in zodziai:
         zodziaiFiltruoti.append(zodis)
         
 ilgiausiasZodis = raskIlgiausiaZodi(zodziaiFiltruoti)
-print(ilgiausiasZodis)
+print("Ilgiausias rastas žodis: " + ilgiausiasZodis)
+
+zodziuSkaicius = len(zodziaiFiltruoti)
+print("Apskaičiuotas žodžių skaičius: " + str(zodziuSkaicius))
+
+dazniai = raskZodziuDazni(zodziaiFiltruoti)
+print(dazniai)
     
