@@ -57,3 +57,12 @@ Sukurta programa, kuri išanalizuoja Donelaičio "Metai" kūrinio sandarą.
 - [X] Apskaičiuojamas kiekvieno žodžio pasikartojimo dažnis
 - [X] Žodžiai surikiuojami pagal dažnį
 
+### Programos paleidimas
+
+Jog programa veiktų, visų pirma, į jos katalogą reikia įkelti tekstinį failą pavadinimu "Metai.txt", kuriame yra atitinkamas kūrinys. Programa gali būti paleidžiama nuėjus į programos katalogą su terminalu:
+
+```
+$ cd 08-uzduotis
+$ python3 metai.py
+```
+
