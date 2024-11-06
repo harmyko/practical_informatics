@@ -7,6 +7,7 @@ Created on Fri Oct 25 18:27:18 2024
 """
 
 import sys
+import math
 
 SKAICIUS_MIN = -10000
 SKAICIUS_MAX = 10000
@@ -100,7 +101,7 @@ else:
     
     if atsakymasGautas == 1:
         saknis = potencialiSaknis ** (1 / laipsnis)
-        saknis = int(saknis)
+        saknis = int(round(saknis, 1))
 
 if atsakymasGautas == 1:
     daugiklis *= saknis

@@ -6,3 +6,18 @@ Created on Wed Nov  6 19:39:36 2024
 @author: ugte0917
 """
 
+f = open("Metai.txt", "r", encoding="utf8")
+
+def pasalinkSkyrybosZenklus(eilute):
+    skyrybosZenklai = "-–—„“.,!?:(;)"
+    for simbolis in skyrybosZenklai:
+        eilute = eilute.replace(simbolis, " ")
+    return eilute
+
+zodziai = []
+for eilute in f:
+    eilute = pasalinkSkyrybosZenklus(eilute)
+    eilute = eilute.strip().split(" ")
+    zodziai += eilute
+    
+    print(zodziai)
