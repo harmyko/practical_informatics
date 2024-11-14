@@ -20,6 +20,19 @@ def nuskaityti_slaptazodzius():
         slaptazodziai.append(slaptazodis)
     return slaptazodziai
 
+def rasti_slaptazodi_pagal_hash(sha256_checksum, slaptazodziai):
+    patikrinta_slaptazodziu_skaicius = 0
+    slaptazodis = "Nerasta"
+    for zodis in slaptazodziai:
+        patikrinta_slaptazodziu_skaicius += 1
+        if skaiciuoti_sha256(zodis) == sha256_checksum:
+            slaptazodis = zodis
+            break
+    return slaptazodis,patikrinta_slaptazodziu_skaicius
+
 slaptazodziai = nuskaityti_slaptazodzius()
-print(skaiciuoti_sha256("labas"))
+
+sha256_checksum = "4b529ac375b4217be17fef1a4a6f1624185cc99909e92278c0759e12ab3d61fa"
+slaptazodis,patikrinta_slaptazodziu_skaicius = rasti_slaptazodi_pagal_hash(sha256_checksum, slaptazodziai)
+print(slaptazodis,patikrinta_slaptazodziu_skaicius)
 
