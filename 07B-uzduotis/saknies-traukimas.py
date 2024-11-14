@@ -7,17 +7,16 @@ Created on Fri Oct 25 18:27:18 2024
 """
 
 import sys
-import math
 
 SKAICIUS_MIN = -10000
 SKAICIUS_MAX = 10000
 
 def patikrinkRezius(skaicius, skaiciusMin, skaiciusMax):
     if skaicius > skaiciusMax:
-        print("Įvestas skaičius negali virsyti reikšmės", str(skaiciusMax) + ".")
+        print("Klaida: Įvestas skaičius negali virsyti reikšmės", str(skaiciusMax) + ".")
         sys.exit(0)
     if skaicius < skaiciusMin:
-        print("Įvesto skaičiaus reikšmė negali būti mažesnė už", str(skaiciusMin) + ".")
+        print("Klaida: Įvesto skaičiaus reikšmė negali būti mažesnė už", str(skaiciusMin) + ".")
         sys.exit(0)
         
 def paverskSkaiciumi(ivestis):
@@ -31,18 +30,22 @@ def paverskSkaiciumi(ivestis):
 def patikrinkSkaiciu(skaicius):
     verte = paverskSkaiciumi(skaicius)
     if verte == None:
-        print("Privaloma įvesti sveikąjį skaičių!")
+        print("Klaida: Privaloma įvesti sveikąjį skaičių!")
         sys.exit(0)
     return verte
 
-print("N-tojo laipsnio šaknies traukimo iš skaičiaus programa.")
-daugiklis = input("Įveskite daugiklį prieš laipsnį (1 jei nėra): ")
+print("N-tojo laipsnio šaknies traukimo iš skaičiaus programa. Įveskite šiuos duomenis:")
+print("Daugiklį prieš šaknį a, šaknies laipsnį n ir pošaknį b")
+daugiklis = input("Įveskite daugiklį prieš šaknį a: ")
 daugiklis = patikrinkSkaiciu(daugiklis)
 patikrinkRezius(daugiklis, SKAICIUS_MIN, SKAICIUS_MAX)
-laipsnis = input("Įveskite šaknies laipsnį: ")
+laipsnis = input("Įveskite šaknies laipsnį n: ")
 laipsnis = patikrinkSkaiciu(laipsnis)
 patikrinkRezius(laipsnis, 2, SKAICIUS_MAX)
-posaknis = input("Įveskite pošaknį: ")
+posaknis = input("Įveskite pošaknį b: ")
+if (laipsnis % 2 == 0) and (int(posaknis) < 0):
+    print("Klaida: Iš lyginio skaičiaus laipsnio šaknies galime ištraukti tik neneigiamą pošaknį!") 
+    sys.exit(0)
 posaknis = patikrinkSkaiciu(posaknis)
 if laipsnis % 2 == 0:
     patikrinkRezius(posaknis, 0, SKAICIUS_MAX)
@@ -79,6 +82,7 @@ else:
             if posaknis < 0:
                 neigiamas = 1
             posaknis = 0
+            atsakymasGautas = 1
             break
             
         potencialiSaknis = temp
@@ -111,6 +115,10 @@ if neigiamas == 1:
 
 if posaknis == 0:
     print("Gautas rezultatas:", daugiklis)
+    sys.exit(0)
+if daugiklis == 1 and posaknis > 0:
+    print("Gautas rezultatas:", laipsnis, "√", posaknis)
+    sys.exit(0)
 else:
     if posaknis < 0:
         print("Gautas rezultatas:", daugiklis, "*", laipsnis, "√", "(" + str(posaknis) + ")")

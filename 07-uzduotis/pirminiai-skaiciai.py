@@ -44,10 +44,10 @@ def paversti_i_skaiciu(ivestis):
 def patikrinti_skaiciu(skaicius):
     verte = paversti_i_skaiciu(skaicius)
     if verte == None:
-        print("Privaloma įvesti sveikąjį skaičių.")
+        print("Klaida: Privaloma įvesti sveikąjį skaičių.")
         sys.exit(0)
     if verte < 1:
-        print("Privaloma įvesti teigiamą skaičių.")
+        print("Klaida: Privaloma įvesti teigiamą skaičių.")
         sys.exit(0)
     return verte
 
@@ -66,11 +66,11 @@ if skaicius_nuo > skaicius_iki:
 print("Pirminių skaičių ieškoma intervale [" + str(skaicius_nuo) + ", " + str(skaicius_iki) + "]")
 
 if korektiskasIntervaloDydis(skaicius_nuo, skaicius_iki) == False:
-    print("Maksimalus leistinas skirtumas tarp rėžių galų yra 99. ")
+    print("Klaida: Maksimalus leistinas skirtumas tarp rėžių galų yra 99. ")
     sys.exit(0)
     
 if korektiskasVirsutinisRezis(skaicius_iki) == False:
-    print("Viršutinis rėžis negali viršyti 1000000.")
+    print("Klaida: Viršutinis rėžis negali viršyti 1000000.")
     sys.exit(0)
     
 

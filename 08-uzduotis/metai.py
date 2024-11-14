@@ -27,7 +27,7 @@ def raskIlgiausiaZodi(zodziaiFiltruoti):
 def raskZodziuDazni(zodziaiFiltruoti):
     zodziuDazniai = Counter(zodziaiFiltruoti)
     surikiuotiPagalDazni = zodziuDazniai.most_common()
-    isvestis = ', '.join([f"'{zodis}': {daznis}" for zodis, daznis in surikiuotiPagalDazni])
+    isvestis = '\n'.join([f"{i + 1}. '{zodis}': {daznis}" for i, (zodis, daznis) in enumerate(surikiuotiPagalDazni[:100])])
     return isvestis
 
 zodziai = []
