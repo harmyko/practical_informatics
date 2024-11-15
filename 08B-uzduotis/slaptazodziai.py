@@ -15,7 +15,7 @@ def skaiciuoti_sha256(slaptazodis):
 
 def nuskaityti_slaptazodzius():
     slaptazodziai = []
-    f = open('testyou.txt', 'r', encoding="utf8", errors="ignore")
+    f = open('rockyou.txt', 'r', encoding="utf8", errors="ignore")
     for eilute in f:
         slaptazodis = eilute.strip()
         slaptazodziai.append(slaptazodis)
@@ -44,7 +44,7 @@ def apskaiciuoti_stipraus_slaptazodzio_nulauzimo_laika(hashrate):
 
 slaptazodziai = nuskaityti_slaptazodzius()
 
-sha256_checksum = "4b529ac375b4217be17fef1a4a6f1624185cc99909e92278c0759e12ab3d61fa"
+sha256_checksum = "e1a659d774746cd38230120cc6156bcbada67dffbf4f183775e89fd61abf297d"
 pradzios_laikas = time.time()
 slaptazodis,patikrinta_slaptazodziu_skaicius = rasti_slaptazodi_pagal_hash(sha256_checksum, slaptazodziai)
 pabaigos_laikas = time.time()
