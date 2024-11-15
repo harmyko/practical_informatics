@@ -27,7 +27,9 @@ def raskIlgiausiaZodi(zodziaiFiltruoti):
 def raskZodziuDazni(zodziaiFiltruoti):
     zodziuDazniai = Counter(zodziaiFiltruoti)
     surikiuotiPagalDazni = zodziuDazniai.most_common()
-    isvestis = '\n'.join([f"{i + 1}. '{zodis}': {daznis}" for i, (zodis, daznis) in enumerate(surikiuotiPagalDazni[:100])])
+    isvestis = '\n'.join([
+    f"{i + 1:>3}. '{zodis}':{' ' * (15 - len(zodis))}{daznis}" 
+    for i, (zodis, daznis) in enumerate(surikiuotiPagalDazni[:100])])
     return isvestis
 
 zodziai = []
@@ -49,5 +51,6 @@ zodziuSkaicius = len(zodziaiFiltruoti)
 print("Apskaičiuotas žodžių skaičius: " + str(zodziuSkaicius))
 
 dazniai = raskZodziuDazni(zodziaiFiltruoti)
-print("Dažniausiai naudojami žodžiai: " + dazniai)
+print("Dažniausiai naudojami žodžiai: ")
+print(dazniai)
     
