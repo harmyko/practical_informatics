@@ -66,3 +66,22 @@ $ cd 08-uzduotis
 $ python3 metai.py
 ```
 
+## 08B užduotis (papildoma)
+
+Sukurta programa, kuri atranda duomenų bazėje slaptažodį, kuris sutampa su programos kode įvestu užkodavimu.
+
+### Programos funkcionalumas
+
+- [X] Išveda rastą slaptažodį
+- [X] Išveda, kiek laiko užtruko jį surasti
+- [X] Išveda, kiek patikrina slaptažodžių per sekundę
+- [X] Išveda, kiek laiko užtruktų su esama įranga nulaužti stiprų 8 simbolių ilgio slaptažodį.
+
+### Programos paleidimas
+
+Jog programa veiktų, visų pirma, į jos katalogą reikia įkelti tekstinį failą pavadinimu "rockyou.txt", jei jo dar ten nėra. Šiame tekstiniame faile yra galimų slaptažodžių variantai. Programa gali būti paleidžiama nuėjus į programos katalogą su terminalu:
+
+```
+$ cd 08B-uzduotis
+$ python3 slaptazodziai.py
+```
