@@ -15,7 +15,12 @@ for eilute in f:
         isleidimoMetai.append(int(eilute[2]))
     eiluciu_skaicius += 1
     print(eilute)
-    plt.scatter(isleidimoMetai, tranzistoriuSkaiciai, label="le10") 
+    
+plt.scatter(isleidimoMetai, tranzistoriuSkaiciai, label="Tranzistoriai")
+plt.title("Mūro dėsnis")
+plt.xlabel("Metai")
+plt.ylabel("Tranzistorių skaičius")
+plt.yscale("log")
     
     
     
