@@ -85,3 +85,21 @@ Jog programa veiktų, visų pirma, į jos katalogą reikia įkelti tekstinį fai
 $ cd 08B-uzduotis
 $ python3 slaptazodziai.py
 ```
+
+## 09 užduotis
+
+Sukurta programa, kuri atidaro failą pavadinimu "transistor-counts.csv", pagal failę esančius duomenis sukuria grafiką, kuriame matosi pagamintų tranzistorių pagaminimo kiekio kaita ir išsaugo šį grafiką trejais formatais: .pdf, .png ir .svg.
+
+### Programos funkcionalumas
+
+- [X] Sukuria grafiką
+- [X] Išsaugo grafiką į diską
+
+### Programos paleidimas
+
+Jog programa veiktų, visų pirma, į jos katalogą reikia įkelti tekstinį failą pavadinimu "transistor-counts.csv", jei jo dar ten nėra.Programa gali būti paleidžiama nuėjus į programos katalogą su terminalu:
+
+```
+$ cd 09-uzduotis
+$ python3 moores_law.py
+```
