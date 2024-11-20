@@ -29,3 +29,8 @@ plt.ylabel("Tranzistorių skaičius")
 plt.yscale("log")
 plt.legend()
 plt.title("Mūro dėsnis: tranzistorių skaičiaus augimas")
+plt.savefig("moores_law.pdf", format="pdf")
+plt.savefig("moores_law.png", format="png")
+plt.savefig("moores_law.svg", format="svg")
+
+plt.show()
