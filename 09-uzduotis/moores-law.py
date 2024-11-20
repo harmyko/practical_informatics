@@ -1,5 +1,6 @@
 
 
+import matplotlib.pyplot as plt
 
 f = open("transistor-counts.csv" , "r", encoding="utf8")
 eiluciu_skaicius = 0
@@ -14,5 +15,7 @@ for eilute in f:
         isleidimoMetai.append(int(eilute[2]))
     eiluciu_skaicius += 1
     print(eilute)
+    plt.scatter(isleidimoMetai, tranzistoriuSkaiciai, label="le10") 
+    
     
     
