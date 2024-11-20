@@ -51,6 +51,9 @@ pabaigos_laikas = time.time()
 uzimtas_laikas = pabaigos_laikas - pradzios_laikas
 hashrate = apskaiciuoti_hashrate(patikrinta_slaptazodziu_skaicius, uzimtas_laikas)
 stipraus_slaptazodzio_nulauzimo_laikas = apskaiciuoti_stipraus_slaptazodzio_nulauzimo_laika(hashrate)
+uzimtas_laikas = f"{uzimtas_laikas:.2f}"
+hashrate = f"{hashrate:.2f}"
+stipraus_slaptazodzio_nulauzimo_laikas = f"{stipraus_slaptazodzio_nulauzimo_laikas:.2f}"
 print("Rastas slaptažodis: " + slaptazodis)
 print("Prastą slaptažodį atspėjome per: " + str(uzimtas_laikas) + " sekundžių.")
 print("Galime patikrinti: " + str(hashrate) + " slaptažodžių per sekundę")
