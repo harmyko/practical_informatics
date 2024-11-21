@@ -103,3 +103,21 @@ Jog programa veiktų, visų pirma, į jos katalogą reikia įkelti tekstinį fai
 $ cd 09-uzduotis
 $ python3 moores_law.py
 ```
+
+## 10 užduotis
+
+Ši programa sukuria du grafikus, kuriuos taip pat išsaugo į .pdf formato failus.
+
+### Programos funkcionalumas
+
+- [X] Sukuria grafikus
+- [X] Išsaugo grafikus .pdf formatu
+
+### Programos paleidimas
+
+Programa gali būti paleidžiama nuėjus į programos katalogą su terminalu:
+
+```
+$ cd 10-uzduotis
+$ python3 funkciju_grafikai.py
+```
