@@ -24,6 +24,24 @@ plt.xlabel("x")
 plt.ylabel("y")
 plt.title("Hiperbolės")
 plt.xlim(-5, 5)
-plt.ylim(-5, 5)
+plt.ylim(-15, 15)
+
+plt.savefig("hiperbolės.pdf", format="pdf")
+
+plt.show()
+plt.close()
+
+X = np.linspace(-6, 6, 50001)
+F1 = np.sin(X ** 2)
+plt.plot(X, F1, linestyle=":", label=r"$f_1(x)=sin(x^2)$")
+
+plt.xlabel("x")
+plt.ylabel("y")
+plt.title("$f(x)=sin(x^2)$")
+plt.xlim(-6, 6)
+plt.ylim(-1.2, 1.2)
+
+plt.savefig("sinusoidė.pdf", format="pdf")
+
 plt.show()
 plt.close()
