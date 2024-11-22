@@ -92,8 +92,8 @@ Sukurta programa, kuri atidaro failą pavadinimu "transistor-counts.csv", pagal 
 
 ### Programos funkcionalumas
 
-- [X] Sukuria grafiką
-- [X] Išsaugo grafiką į diską
+1. Sukuria grafiką
+2. Išsaugo grafiką į diską
 
 ### Programos paleidimas
 
@@ -110,8 +110,8 @@ $ python3 moores_law.py
 
 ### Programos funkcionalumas
 
-- [X] Sukuria grafikus
-- [X] Išsaugo grafikus .pdf formatu
+1. Sukuria grafikus
+2. Išsaugo grafikus .pdf formatu
 
 ### Programos paleidimas
 
