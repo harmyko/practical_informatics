@@ -1,3 +1,7 @@
+# Practical Informatics - Python Tasks @ VU
+
+This is just a collection of Python tasks I had to do for a university course. I'm not aiming to impress anyone here, just dumping the files in case I or someone else needs them later. Everything below is in Lithuanian and was written as part of the course assignments. Have fun, or don't. Graded by the one and only Čyras.
+
 # Praktinės informatikos Python užduotys
 
 aut.: **Ugnius Teišerskis**
