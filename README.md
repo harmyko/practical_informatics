@@ -2,6 +2,17 @@
 
 This is just a collection of Python tasks I had to do for a university course. I'm not aiming to impress anyone here, just dumping the files in case I or someone else needs them later. Everything below is in Lithuanian and was written as part of the course assignments. Have fun, or don't. Graded by the one and only Čyras.
 
+## Folder Structure & Task Overview
+
+- **07-uzduotis**: Program that finds all prime numbers within a user-specified interval.
+- **07B-uzduotis**: Program that simplifies square root expressions entered by the user.
+- **08-uzduotis**: Text analysis of Kristijonas Donelaitis' *Metai*: word counting, frequency, and longest word.
+- **08B-uzduotis**: A simple brute-force password cracker using a provided dictionary file.
+- **09-uzduotis**: Reads a CSV file of transistor counts and generates/saves a graph showing Moore’s Law in action.
+- **10-uzduotis**: Plots two mathematical functions and saves the resulting charts as PDFs and other formats.
+
+---
+
 # Praktinės informatikos Python užduotys
 
 aut.: **Ugnius Teišerskis**
